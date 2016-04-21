@@ -50,9 +50,9 @@
       $markup = '';
 
       // Creates the markup of the component
-      if ($options['prerender'] === true) {
-        $markup = $this->getReact()->setComponent($component, $props)->getMarkup();
-      }
+      // if ($options['prerender'] === true) {
+      //   $markup = $this->getReact()->setComponent($component, $props)->getMarkup();
+      // }
 
       // Pass props back to view as value of `data-react-props`
       $props = htmlentities(json_encode($props), ENT_QUOTES);
